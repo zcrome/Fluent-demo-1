@@ -1,0 +1,267 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bottomNavContainer{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.topNavContainer{
+  height: 100px;
+  vertical-align: top;
+}
+
+.divisions{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 50%;
+}
+
+.divisions-parent-left{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 30%;
+}
+
+.divisions-parent-right{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 70%;
+}
+
+.divisions-left-cont{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  height: 70%;
+  width: 35%;
+  margin-top: 3%;
+}
+
+.divisions-right-cont{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 60%;
+}
+
+.topNavTitle{
+  font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    margin-top: 14%;
+}
+
+.topSortButton{
+    width: 40%;
+    height: 60%;
+    margin-bottom: 70%;
+}
+.topSortMargin{
+  width: 5%;
+height: 100%;
+display: inline-block;
+}
+
+
+.navigation-view-pageTitle-1124336502{
+  font-size: 2em;
+    text-align: left;
+    display: block;
+    position: relative;
+    margin-left: 5px;
+}
+
+
+.leftMenuItemsTitles{
+  font-size: 1.5em;
+}
+
+.navigation-view-paneTopIcons-1330591933{
+  margin-top: 25%;
+}
+
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 430px 430px 430px;
+  grid-gap: 1%;
+  width: 100%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.box {
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box-project{
+  width: 100%;
+  height: 100%;
+}
+
+.box-project-image{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+.box-project-title{
+  display: block;
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+.box-project-description{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 30%;
+}
+.box-project-img{
+  width: 100%;
+  height: 100%;
+}
+
+.box-project-title-text{
+  font-size: 3em;
+}
+
+.box-project-description-text{
+  font-size: 2em;
+}
+
+
+.navigation-view-paneTopIcons-1330591933{
+  margin-top: 295px;
+}
+
+.user-info-container{
+  display: block;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  bottom: 63%;
+}
+
+.user-info-sub-container{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.user-profile-icon{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+
+
+.user-profile-name{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 30%;
+  font-size: 1.5em;
+}
+
+/*---------------------------------*/
+
+.open-p-nav-view{
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  margin: 0px;
+}
+
+.open-p-nav-view-content{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding-left: 50px;
+}
+
+
+/* .navigation-view-paneTop-563544914 .navigation-view-paneTopIcons-1330591933{
+  margin-top: 0%;
+}
+
+
+.navigation-view-pane-3469601926 .navigation-view-paneTopIcons-1330591933{
+  margin: 0%;
+} */
+
+
+.navigation-view-paneTopIcons-1330591933 span span{
+  height: 100% !important;
+}
+
+.navigation-view-paneParent-3889249915 .navigation-view-pane-1013991973{
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
