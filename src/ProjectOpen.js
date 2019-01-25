@@ -12,6 +12,8 @@ import NavigationView from "react-uwp/NavigationView";
 import SplitViewCommand from "react-uwp/SplitViewCommand";
 import Icon from "react-uwp/Icon";
 
+import MyFilesLists from './Components/Workspace/MyFilesLists.js';
+
 
 import TreeView, { TreeItem } from "react-uwp/TreeView";
 
@@ -61,34 +63,15 @@ class ProjectOpened extends Component {
       itemHeight
     } = this.state;
 
-
     const navigationTopNodes = [
-
-      <TreeView
-        style={{ height: 640 }}
-        iconDirection={iconDirection}
-        itemHeight={itemHeight}
-        headerIcon={showHeaderIcon && <Icon style={{ fontSize: itemHeight / 3 }}>FolderLegacy</Icon>}
-        itemIcon={showItemIcon && <Icon style={{ fontSize: itemHeight / 3 }}>OpenFileLegacy</Icon>}
-        listSource={[{
-          title: "Buscar",
-          children: [{
-            title: "Imagenes",
-          }]
-        },{
-          title: "Mis Materiales",
-          children: []
-        },{
-          title: "Color Fondo",
-          children: []
-        }]}
-        showFocus
-      />
-
+      <SplitViewCommand label="Buscar en Internet" icon={"\uE716"} style={{ fontSize: '14px' }} />,
+      <SplitViewCommand label="Mis Archivos" icon="PrintLegacy" style={{ fontSize: '14px' }} />
     ];
 
     const navigationBottomNode = [
-      <SplitViewCommand label="Cerrar Sesión" icon={"\uE7E8"} />
+      <SplitViewCommand label="Configuración" icon={"\uE713"} style={{ fontSize: '14px' }} />,
+      <SplitViewCommand label="Cambiar de Proyecto" icon={"\uE161"} style={{ fontSize: '14px' }} />,
+      <SplitViewCommand label="Salir" icon={"\uE161"} style={{ fontSize: '14px' }} />
     ];
 
 
@@ -119,58 +102,36 @@ class ProjectOpened extends Component {
       bottom: 0,
       margin: "auto"
     });
+
+
+
+
     return (
-      <div
-        style={theme.prefixStyle({
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          width: "100%",
-          padding: "160px 0",
-          background: theme.desktopBackground
-        })}
+      
+      <div className="proyect-open-container"
+      style={{
+        background: theme.acrylicTexture40.background
+      }}
       >
-        <span style={{
-          ...itemStyle,
-          background: theme.acrylicTexture40.background,
-          "marginBottom": "0px",
-          "width": "854px",
-          "height": "480px",
-        }}>
+          
+        <NavigationView className="navView"
+          style={baseStyle}
+          pageTitle="San Francisco"
+          paneStyle={{ fontSize: '20px' }}
+          displayMode="overlay"
+          autoResize={false}
+          background={theme.listLow}
+          initWidth={48}
+          navigationTopNodes={navigationTopNodes}
+          navigationBottomNodes={navigationBottomNode}
+          focusNavigationNodeIndex={3}
+        >
 
+        <MyFilesLists></MyFilesLists>
 
-          <NavigationView
-            style={{
-              ...baseStyle,
-              "height": "480px",
-              "margin": "0px",
-              "overflow": "hidden"
-            }}
-            className="open-p-nav-view"
-            pageTitle={<p style={{ fontSize: "16px" }}>José Sanchez</p>}
-            displayMode="compact"
-            autoResize={false}
-            defaultExpanded
-            background={theme.listLow}
-            initWidth={48}
-            navigationTopNodes={navigationTopNodes}
-            navigationBottomNodes={navigationBottomNode}
-            focusNavigationNodeIndex={3}
-            isControlled
-          >
-            <div className="open-p-nav-view-content">
-            
-            </div>
+        </NavigationView>
 
-
-          </NavigationView>
-
-
-
-
-        </span>
+        
       </div>
     );
   }
