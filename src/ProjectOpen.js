@@ -121,7 +121,7 @@ class ProjectOpened extends Component {
           paneStyle={{ fontSize: '20px' }}
           displayMode="overlay"
           autoResize={false}
-          background={theme.listLow}
+          
           initWidth={48}
           navigationTopNodes={navigationTopNodes}
           navigationBottomNodes={navigationBottomNode}
