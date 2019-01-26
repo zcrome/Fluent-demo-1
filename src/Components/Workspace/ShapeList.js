@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 import '../../App.css';
 
-import WorkspaceItem from './WorkspaceItem.js';
+import RectangleInputItem from './RectangleInputItem.js';
+import TriangleInputItem from './TriangleInputItem.js';
+import TextInputItem from './TextInputItem.js';
 
 
 class ShapeList extends Component{
 
     render() {
 
-        const images = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-
-        const imagesItems = images.map((number) =>
-            <WorkspaceItem>HOLA?</WorkspaceItem>
-        );
+        const listsStyle = {"marginTop":"10px"};
 
 
         return (
-            <div className="scrolling-wrapper">{imagesItems}</div>
+            <div style={listsStyle} className="scrolling-wrapper">
+            <TextInputItem></TextInputItem>
+            <RectangleInputItem></RectangleInputItem>
+            <TriangleInputItem></TriangleInputItem>
+            </div>
         )
     }
 

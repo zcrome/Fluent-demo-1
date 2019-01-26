@@ -10,10 +10,16 @@ class MyFilesLists extends Component{
 
     render() {
 
+
+        
+
         return (
-            <div>
-                <ImageList></ImageList>
+            <div className="workspace-body">
+                <hr/>
+                <ImageList ></ImageList>
+                <hr/>
                 <VideoList></VideoList>
+                <hr/>
                 <ShapeList></ShapeList>
             </div>
         )

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../App.css';
 
-import WorkspaceItem from './WorkspaceItem.js';
+import ImageItem from './ImageItem.js';
 
 
 class ImageList extends Component{
@@ -11,12 +11,13 @@ class ImageList extends Component{
         const images = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
 
         const imagesItems = images.map((number) =>
-            <WorkspaceItem>HOLA?</WorkspaceItem>
+            <ImageItem></ImageItem>
         );
 
+        const listsStyle = {"marginTop":"10px"};
 
         return (
-            <div className="scrolling-wrapper">{imagesItems}</div>
+            <div style={listsStyle} className="scrolling-wrapper">{imagesItems}</div>
         )
     }
 

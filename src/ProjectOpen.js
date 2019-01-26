@@ -13,6 +13,7 @@ import SplitViewCommand from "react-uwp/SplitViewCommand";
 import Icon from "react-uwp/Icon";
 
 import MyFilesLists from './Components/Workspace/MyFilesLists.js';
+import WorkspaceHeader from './Components/Workspace/WorkspaceHeader.js';
 
 
 import TreeView, { TreeItem } from "react-uwp/TreeView";
@@ -127,7 +128,11 @@ class ProjectOpened extends Component {
           focusNavigationNodeIndex={3}
         >
 
-        <MyFilesLists></MyFilesLists>
+        <div className="workspace">
+          <WorkspaceHeader></WorkspaceHeader>
+          <MyFilesLists></MyFilesLists>
+        </div>
+        
 
         </NavigationView>
 
